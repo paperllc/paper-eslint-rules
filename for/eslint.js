@@ -4,7 +4,7 @@
 /**
  * Customized Possible Problems rules
  */
-export const lintjsRulesForEslintBaseRules = {
+export const paperRulesForEslintBaseRules = {
     'array-callback-return': 'error',
     // Included in recommended: constructor-super
     // Included in recommended: for-direction
@@ -75,7 +75,7 @@ export const lintjsRulesForEslintBaseRules = {
 /**
  * Customized Suggestions rules
  */
-export const lintjsRulesForEslintSuggestionsRules = {
+export const paperRulesForEslintSuggestionsRules = {
     'accessor-pairs': 'error',
     // Ignored: arrow-body-style
     // Ignored: block-scoped-var - Ignored due to the use of `let` and `const`
@@ -217,16 +217,16 @@ export const lintjsRulesForEslintSuggestionsRules = {
 /**
  * Customized Layout & Formatting rules
  */
-export const lintjsRulesForEslintLayoutAndFormattingRules = {
+export const paperRulesForEslintLayoutAndFormattingRules = {
     'unicode-bom': 'error',
 };
 /**
  * All customized eslint rules
  */
-export const lintjsRulesForEslint = {
-    ...lintjsRulesForEslintBaseRules,
-    ...lintjsRulesForEslintSuggestionsRules,
-    ...lintjsRulesForEslintLayoutAndFormattingRules,
+export const paperRulesForEslint = {
+    ...paperRulesForEslintBaseRules,
+    ...paperRulesForEslintSuggestionsRules,
+    ...paperRulesForEslintLayoutAndFormattingRules,
 };
-export default lintjsRulesForEslint;
+export default paperRulesForEslint;
 //# sourceMappingURL=eslint.js.map

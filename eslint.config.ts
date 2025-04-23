@@ -3,8 +3,8 @@ import globals from 'globals'
 import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
-import { lintjsRulesForEslint } from './for/eslint.js'
-import { getLintjsRulesForStylistic } from './for/stylistic.js'
+import { paperRulesForEslint } from './for/eslint.js'
+import { getPaperRulesForStylistic } from './for/stylistic.js'
 
 const stylisticCustomizeOptions: StylisticCustomizeOptions = {
     pluginName: '@stylistic',
@@ -43,8 +43,8 @@ export default [
             parserOptions: { ecmaFeatures: { jsx: true } },
         },
         rules: {
-            ...lintjsRulesForEslint,
-            ...getLintjsRulesForStylistic(stylisticCustomizeOptions),
+            ...paperRulesForEslint,
+            ...getPaperRulesForStylistic(stylisticCustomizeOptions),
 
             '@typescript-eslint/no-unused-vars': 'off', // Covered by TypeScript
         },

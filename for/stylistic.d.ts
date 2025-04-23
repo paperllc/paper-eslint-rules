@@ -1,5 +1,5 @@
 import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin';
-export declare function getLintjsRulesForStylistic(options: StylisticCustomizeOptions): {
+export declare function getPaperRulesForStylistic(options: StylisticCustomizeOptions): {
     '@stylistic/jsx-child-element-spacing'?: string;
     '@stylistic/jsx-curly-brace-presence'?: (string | {
         props: string;
@@ -26,4 +26,4 @@ export declare function getLintjsRulesForStylistic(options: StylisticCustomizeOp
         reservedFirst: boolean;
     })[];
 };
-export default getLintjsRulesForStylistic;
+export default getPaperRulesForStylistic;

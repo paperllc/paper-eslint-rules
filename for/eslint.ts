@@ -7,7 +7,7 @@ import type { Linter } from 'eslint'
 /**
  * Customized Possible Problems rules
  */
-export const lintjsRulesForEslintBaseRules: Readonly<Linter.RulesRecord> = {
+export const paperRulesForEslintBaseRules: Readonly<Linter.RulesRecord> = {
     'array-callback-return': 'error',
     // Included in recommended: constructor-super
     // Included in recommended: for-direction
@@ -79,7 +79,7 @@ export const lintjsRulesForEslintBaseRules: Readonly<Linter.RulesRecord> = {
 /**
  * Customized Suggestions rules
  */
-export const lintjsRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> = {
+export const paperRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> = {
     'accessor-pairs': 'error',
     // Ignored: arrow-body-style
     // Ignored: block-scoped-var - Ignored due to the use of `let` and `const`
@@ -222,17 +222,17 @@ export const lintjsRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> 
 /**
  * Customized Layout & Formatting rules
  */
-export const lintjsRulesForEslintLayoutAndFormattingRules: Readonly<Linter.RulesRecord> = {
+export const paperRulesForEslintLayoutAndFormattingRules: Readonly<Linter.RulesRecord> = {
     'unicode-bom': 'error',
 }
 
 /**
  * All customized eslint rules
  */
-export const lintjsRulesForEslint: Readonly<Linter.RulesRecord> = {
-    ...lintjsRulesForEslintBaseRules,
-    ...lintjsRulesForEslintSuggestionsRules,
-    ...lintjsRulesForEslintLayoutAndFormattingRules,
+export const paperRulesForEslint: Readonly<Linter.RulesRecord> = {
+    ...paperRulesForEslintBaseRules,
+    ...paperRulesForEslintSuggestionsRules,
+    ...paperRulesForEslintLayoutAndFormattingRules,
 }
 
-export default lintjsRulesForEslint
+export default paperRulesForEslint

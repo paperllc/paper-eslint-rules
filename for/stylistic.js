@@ -5,7 +5,7 @@
 /**
  * All stylistic rules except included in stylistic.configs.customize() function and jsx rules.
  */
-const lintjsRulesForStylisticBaseRules = {
+const paperRulesForStylisticBaseRules = {
     '@stylistic/array-bracket-newline': 'off',
     // Included in customize: @stylistic/array-bracket-spacing
     '@stylistic/array-element-newline': ['error', 'consistent'],
@@ -119,7 +119,7 @@ const lintjsRulesForStylisticBaseRules = {
 /**
  * All jxs stylistic rules except included in stylistic.configs.customize()
  */
-const lintjsRulesForStylisticJsxRules = {
+const paperRulesForStylisticJsxRules = {
     '@stylistic/jsx-child-element-spacing': 'error',
     // Included in customize: @stylistic/jsx-closing-bracket-location
     // Included in customize: @stylistic/jsx-closing-tag-location
@@ -160,11 +160,11 @@ const lintjsRulesForStylisticJsxRules = {
     // Included in customize: @stylistic/jsx-tag-spacing
     // Included in customize: @stylistic/jsx-wrap-multilines
 };
-export function getLintjsRulesForStylistic(options) {
+export function getPaperRulesForStylistic(options) {
     return {
-        ...lintjsRulesForStylisticBaseRules,
-        ...options.jsx ? { ...lintjsRulesForStylisticJsxRules } : {},
+        ...paperRulesForStylisticBaseRules,
+        ...options.jsx ? { ...paperRulesForStylisticJsxRules } : {},
     };
 }
-export default getLintjsRulesForStylistic;
+export default getPaperRulesForStylistic;
 //# sourceMappingURL=stylistic.js.map

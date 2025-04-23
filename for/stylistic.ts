@@ -9,7 +9,7 @@ import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 /**
  * All stylistic rules except included in stylistic.configs.customize() function and jsx rules.
  */
-const lintjsRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
+const paperRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
     '@stylistic/array-bracket-newline': 'off',
     // Included in customize: @stylistic/array-bracket-spacing
     '@stylistic/array-element-newline': ['error', 'consistent'],
@@ -125,7 +125,7 @@ const lintjsRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
 /**
  * All jxs stylistic rules except included in stylistic.configs.customize()
  */
-const lintjsRulesForStylisticJsxRules = {
+const paperRulesForStylisticJsxRules = {
     '@stylistic/jsx-child-element-spacing': 'error',
     // Included in customize: @stylistic/jsx-closing-bracket-location
     // Included in customize: @stylistic/jsx-closing-tag-location
@@ -167,11 +167,11 @@ const lintjsRulesForStylisticJsxRules = {
     // Included in customize: @stylistic/jsx-wrap-multilines
 }
 
-export function getLintjsRulesForStylistic(options: StylisticCustomizeOptions) {
+export function getPaperRulesForStylistic(options: StylisticCustomizeOptions) {
     return {
-        ...lintjsRulesForStylisticBaseRules,
-        ...options.jsx ? { ...lintjsRulesForStylisticJsxRules } : {},
+        ...paperRulesForStylisticBaseRules,
+        ...options.jsx ? { ...paperRulesForStylisticJsxRules } : {},
     }
 }
 
-export default getLintjsRulesForStylistic
+export default getPaperRulesForStylistic
