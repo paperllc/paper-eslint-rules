@@ -1,0 +1,32 @@
+{
+  "name": "paper-eslint-rules",
+  "description": "Better code style and linting rules",
+  "license": "UNLICENSED",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./index.js",
+  "homepage": "https://github.com/lintjs/rules#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paperllc/paper-eslint-rules.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paperllc/paper-eslint-rules/issues"
+  },
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@stylistic/eslint-plugin": "^4.2.0",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "jiti": "^2.4.2",
+    "typescript-eslint": "^8.31.0"
+  }
+}

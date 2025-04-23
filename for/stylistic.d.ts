@@ -1,0 +1,29 @@
+import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin';
+export declare function getLintjsRulesForStylistic(options: StylisticCustomizeOptions): {
+    '@stylistic/jsx-child-element-spacing'?: string;
+    '@stylistic/jsx-curly-brace-presence'?: (string | {
+        props: string;
+        children: string;
+        propElementValues: string;
+    })[];
+    '@stylistic/jsx-curly-newline'?: (string | {
+        multiline: string;
+        singleline: string;
+    })[];
+    '@stylistic/jsx-equals-spacing'?: string[];
+    '@stylistic/jsx-indent'?: (string | number | {
+        checkAttributes: boolean;
+        indentLogicalExpressions: boolean;
+    })[];
+    '@stylistic/jsx-indent-props'?: (string | number)[];
+    '@stylistic/jsx-pascal-case'?: string;
+    '@stylistic/jsx-props-no-multi-spaces'?: string;
+    '@stylistic/jsx-self-closing-comp'?: string;
+    '@stylistic/jsx-sort-props'?: (string | {
+        callbacksLast: boolean;
+        shorthandFirst: boolean;
+        noSortAlphabetically: boolean;
+        reservedFirst: boolean;
+    })[];
+};
+export default getLintjsRulesForStylistic;

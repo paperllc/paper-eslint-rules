@@ -1,0 +1,16 @@
+{
+    "extends": "@tsconfig/strictest/tsconfig.json",
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "declaration": true,
+        "sourceMap": true,
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+    },
+    "include": [
+        "./for/**/*"
+    ],
+}
