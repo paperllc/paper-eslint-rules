@@ -1,5 +1,6 @@
 import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin';
-export declare function getPaperRulesForStylistic(options: StylisticCustomizeOptions): {
+export type PaperStylisticCustomizeOptions = Pick<StylisticCustomizeOptions, 'semi' | 'jsx' | 'arrowParens' | 'quoteProps'>;
+export declare function getPaperRulesForStylistic(options: PaperStylisticCustomizeOptions): {
     '@stylistic/jsx-child-element-spacing'?: string;
     '@stylistic/jsx-curly-brace-presence'?: (string | {
         props: string;
