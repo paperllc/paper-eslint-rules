@@ -167,7 +167,9 @@ const paperRulesForStylisticJsxRules = {
     // Included in customize: @stylistic/jsx-wrap-multilines
 }
 
-export function getPaperRulesForStylistic(options: StylisticCustomizeOptions) {
+export type PaperStylisticCustomizeOptions = Pick<StylisticCustomizeOptions, 'semi' | 'jsx' | 'arrowParens' | 'quoteProps'>
+
+export function getPaperRulesForStylistic(options: PaperStylisticCustomizeOptions) {
     return {
         ...paperRulesForStylisticBaseRules,
         ...options.jsx ? { ...paperRulesForStylisticJsxRules } : {},

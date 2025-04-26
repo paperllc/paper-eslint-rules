@@ -1,22 +1,15 @@
-import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 import globals from 'globals'
 import js from '@eslint/js'
 import tseslint from 'typescript-eslint'
 import stylistic from '@stylistic/eslint-plugin'
 import { paperRulesForEslint } from './for/eslint.js'
-import { getPaperRulesForStylistic } from './for/stylistic.js'
+import { getPaperRulesForStylistic, type PaperStylisticCustomizeOptions } from './for/stylistic.js'
 
-const stylisticCustomizeOptions: StylisticCustomizeOptions = {
-    pluginName: '@stylistic',
-    indent: 4,
-    quotes: 'single',
-    semi: false, // Supported
-    jsx: true, // Supported
-    arrowParens: true, // Supported
-    braceStyle: 'stroustrup',
-    blockSpacing: true,
-    quoteProps: 'as-needed', // Supported
-    commaDangle: 'always-multiline',
+const stylisticCustomizeOptions: PaperStylisticCustomizeOptions = {
+    semi: false,
+    jsx: true,
+    arrowParens: true,
+    quoteProps: 'as-needed',
 }
 
 export default [
