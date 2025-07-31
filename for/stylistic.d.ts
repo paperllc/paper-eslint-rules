@@ -12,10 +12,6 @@ export declare function getPaperRulesForStylistic(options: PaperStylisticCustomi
         singleline: string;
     })[];
     '@stylistic/jsx-equals-spacing'?: string[];
-    '@stylistic/jsx-indent'?: (string | number | {
-        checkAttributes: boolean;
-        indentLogicalExpressions: boolean;
-    })[];
     '@stylistic/jsx-indent-props'?: (string | number)[];
     '@stylistic/jsx-pascal-case'?: string;
     '@stylistic/jsx-props-no-multi-spaces'?: string;

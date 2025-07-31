@@ -136,13 +136,6 @@ const paperRulesForStylisticJsxRules = {
     '@stylistic/jsx-equals-spacing': ['error', 'never'],
     // Included in customize: @stylistic/jsx-first-prop-new-line // If not forced, can cause issues with a multiline object as a first prop value
     // Included in customize: @stylistic/jsx-function-call-newline
-    '@stylistic/jsx-indent': ['error',
-        4,
-        {
-            checkAttributes: true,
-            indentLogicalExpressions: true,
-        },
-    ],
     '@stylistic/jsx-indent-props': ['error', 4],
     // Included in customize: @stylistic/jsx-max-props-per-line
     // Ignored: @stylistic/jsx-newline
