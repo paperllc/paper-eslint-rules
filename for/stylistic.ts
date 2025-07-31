@@ -3,7 +3,7 @@ import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 
 /**
  * Customized stylistic rules.
- * Latest review version of @stylistic/eslint-plugin: 2.6.x
+ * Latest review version of @stylistic/eslint-plugin: 2.8.x
  */
 
 /**
