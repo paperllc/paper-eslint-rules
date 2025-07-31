@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 import type { Linter } from 'eslint'
 import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 
@@ -91,13 +93,20 @@ const paperRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
         'never',
         { allowSingleLineBlocks: false },
     ],
-    '@stylistic/padding-line-between-statements': ['error', {
-        blankLine: 'always',
-        prev: 'multiline-block-like',
-        next: '*',
-    }],
+    '@stylistic/padding-line-between-statements': ['error',
+        {
+            blankLine: 'always',
+            prev: 'multiline-block-like',
+            next: '*',
+        },
+        {
+            blankLine: 'any',
+            prev: 'if',
+            next: 'if',
+        },
+    ],
     // Included in customize: @stylistic/quote-props
-    '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+    '@stylistic/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: 'avoidEscape' }],
     // Included in customize: @stylistic/rest-spread-spacing
     // Included in customize: @stylistic/semi
     // Included in customize: @stylistic/semi-spacing
@@ -107,7 +116,7 @@ const paperRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
     // Included in customize: @stylistic/space-in-parens
     // Included in customize: @stylistic/space-infix-ops
     // Included in customize: @stylistic/space-unary-ops
-    // Included in customize: @stylistic/spaced-comment
+    '@stylistic/spaced-comment': 'off',
     '@stylistic/switch-colon-spacing': 'error',
     // Included in customize: @stylistic/template-curly-spacing
     // Included in customize: @stylistic/template-tag-spacing
