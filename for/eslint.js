@@ -1,3 +1,4 @@
+// noinspection JSUnusedGlobalSymbols
 /**
  * Customized eslint js rules
  */
@@ -56,15 +57,7 @@ export const paperRulesForEslintBaseRules = {
     'no-unsafe-negation': ['error', { enforceForOrderingRelations: true }],
     'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
     // Included in recommended: no-unused-private-class-members
-    'no-unused-vars': ['error', {
-            vars: 'all',
-            args: 'after-used',
-            ignoreRestSiblings: true,
-            caughtErrors: 'all',
-            argsIgnorePattern: '^_',
-            caughtErrorsIgnorePattern: '^_',
-            destructuredArrayIgnorePattern: '^_',
-        }],
+    'no-unused-vars': 'off', // Covered by TypeScript
     // Ignored: no-use-before-define
     'no-useless-assignment': 'error',
     // Included in recommended: no-useless-backreference
@@ -79,11 +72,11 @@ export const paperRulesForEslintSuggestionsRules = {
     'accessor-pairs': 'error',
     // Ignored: arrow-body-style
     // Ignored: block-scoped-var - Ignored due to the use of `let` and `const`
-    camelcase: 'error',
+    camelcase: ['error', { properties: 'never' }], // Don't enforce camelcase for property names
     // Ignored: capitalized-comments - Ignored, because you can have a commented code
     // Ignored: class-methods-use-this - Ignored, because you can have a singletone class
     // Ignored: complexity - Allow any complexity for now
-    'consistent-return': 'error',
+    'consistent-return': 'off', // Don't require return statements
     // Ignored: consistent-this - Rarely used in ES6+ environment
     curly: 'error',
     'default-case': 'error',
@@ -95,7 +88,7 @@ export const paperRulesForEslintSuggestionsRules = {
     'func-names': ['error', 'never'],
     // Ignored: func-style
     'grouped-accessor-pairs': ['error', 'getBeforeSet'],
-    'guard-for-in': 'error',
+    'guard-for-in': 'off', // Don't require guard for in statements
     // Ignored: id-denylist - Ignored, but may become handy
     // Ignored: id-length
     // Ignored: id-match - Ignored in favor of camelcase
