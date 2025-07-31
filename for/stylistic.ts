@@ -88,7 +88,7 @@ const paperRulesForStylisticBaseRules: Readonly<Linter.RulesRecord> = {
     '@stylistic/object-curly-spacing': ['error', 'always'], // Following TypeScript default formatter
     // Ignored: @stylistic/object-property-newline
     // Ignored: @stylistic/one-var-declaration-per-line // Handled by one-var rule
-    // Included in customize: @stylistic/operator-linebreak
+    '@stylistic/operator-linebreak': ['error', 'before', { overrides: { '=': 'ignore', '&': 'ignore' } }],
     '@stylistic/padded-blocks': ['error',
         'never',
         { allowSingleLineBlocks: false },
