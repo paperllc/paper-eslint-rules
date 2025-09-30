@@ -2,7 +2,7 @@
   "name": "paper-eslint-rules",
   "description": "Better code style and linting rules",
   "license": "UNLICENSED",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "./index.js",
   "homepage": "https://github.com/lintjs/rules#readme",
