@@ -13,8 +13,10 @@ export declare function getPaperRulesForStylistic(options: PaperStylisticCustomi
     })[];
     '@stylistic/jsx-equals-spacing'?: string[];
     '@stylistic/jsx-indent-props'?: (string | number)[];
+    '@stylistic/jsx-one-expression-per-line'?: (string | {
+        allow: string;
+    })[];
     '@stylistic/jsx-pascal-case'?: string;
-    '@stylistic/jsx-props-no-multi-spaces'?: string;
     '@stylistic/jsx-self-closing-comp'?: string;
     '@stylistic/jsx-sort-props'?: (string | {
         callbacksLast: boolean;
