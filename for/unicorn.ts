@@ -11,4 +11,5 @@ export const paperRulesForUnicorn: Readonly<Linter.RulesRecord> = {
     'unicorn/prefer-global-this': 'off', // Disable - window is ok for now
     'unicorn/numeric-separators-style': 'off', // Disable - numeric separators are not needed here
     'unicorn/prefer-top-level-await': 'off', // Disable - top-level await is supported from ES2022
+    'unicorn/prefer-ternary': 'off', // Disable - sometimes if-else is more readable
 }
