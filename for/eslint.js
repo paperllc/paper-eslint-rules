@@ -48,7 +48,7 @@ export const paperRulesForEslintBaseRules = {
     // Included in recommended: no-sparse-arrays
     'no-template-curly-in-string': 'error',
     // Included in recommended: no-this-before-super
-    'no-undef': ['error', { typeof: true }],
+    'no-undef': 'off', // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
     // Included in recommended: no-unexpected-multiline
     'no-unmodified-loop-condition': 'error',
     // Included in recommended: no-unreachable
@@ -126,7 +126,7 @@ export const paperRulesForEslintSuggestionsRules = {
     'no-implicit-globals': ['error', { lexicalBindings: true }],
     'no-implied-eval': 'error',
     // Ignored: no-inline-comments
-    'no-invalid-this': 'error', // Can be disable when using TypeScript
+    'no-invalid-this': 'error', // Can be disabled when using TypeScript
     'no-iterator': 'error',
     'no-label-var': 'error',
     // Ignored: no-labels - Consider to re-enable if causes issues
@@ -163,7 +163,7 @@ export const paperRulesForEslintSuggestionsRules = {
     // Ignored: no-ternary
     'no-throw-literal': 'error',
     'no-undef-init': 'error',
-    // Ignored: no-undefined - Not needed sicne ES5
+    // Ignored: no-undefined - Not needed since ES5
     // Ignored: no-underscore-dangle - Enabling this rule can easily break existing code without providing any real benefit
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': ['error', { enforceForJSX: true }],
@@ -177,7 +177,7 @@ export const paperRulesForEslintSuggestionsRules = {
     'no-useless-rename': 'error',
     'no-useless-return': 'error',
     'no-var': 'error',
-    // Ignored: no-void - void is useful for expicitly ignoring return values
+    // Ignored: no-void - void is useful for explicitly ignoring return values
     // Ignored: no-warning-comments
     // Included in recommended: no-with
     'object-shorthand': 'error',

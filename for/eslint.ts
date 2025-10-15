@@ -131,7 +131,7 @@ export const paperRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> =
     'no-implicit-globals': ['error', { lexicalBindings: true }],
     'no-implied-eval': 'error',
     // Ignored: no-inline-comments
-    'no-invalid-this': 'error', // Can be disable when using TypeScript
+    'no-invalid-this': 'error', // Can be disabled when using TypeScript
     'no-iterator': 'error',
     'no-label-var': 'error',
     // Ignored: no-labels - Consider to re-enable if causes issues
@@ -168,7 +168,7 @@ export const paperRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> =
     // Ignored: no-ternary
     'no-throw-literal': 'error',
     'no-undef-init': 'error',
-    // Ignored: no-undefined - Not needed sicne ES5
+    // Ignored: no-undefined - Not needed since ES5
     // Ignored: no-underscore-dangle - Enabling this rule can easily break existing code without providing any real benefit
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': ['error', { enforceForJSX: true }],
@@ -182,7 +182,7 @@ export const paperRulesForEslintSuggestionsRules: Readonly<Linter.RulesRecord> =
     'no-useless-rename': 'error',
     'no-useless-return': 'error',
     'no-var': 'error',
-    // Ignored: no-void - void is useful for expicitly ignoring return values
+    // Ignored: no-void - void is useful for explicitly ignoring return values
     // Ignored: no-warning-comments
     // Included in recommended: no-with
     'object-shorthand': 'error',
