@@ -9,5 +9,6 @@ export const paperRulesForUnicorn = {
     'unicorn/numeric-separators-style': 'off', // Disable - numeric separators are not needed here
     'unicorn/prefer-top-level-await': 'off', // Disable - top-level await is supported from ES2022
     'unicorn/prefer-ternary': 'off', // Disable - sometimes if-else is more readable
+    'unicorn/no-array-reverse': 'off', // We still use ES2022, can be enabled since ES2023
 };
 //# sourceMappingURL=unicorn.js.map
