@@ -52,7 +52,7 @@ export const paperRulesForEslintBaseRules: Readonly<Linter.RulesRecord> = {
     // Included in recommended: no-sparse-arrays
     'no-template-curly-in-string': 'error',
     // Included in recommended: no-this-before-super
-    'no-undef': ['error', { typeof: true }],
+    'no-undef': 'off', // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
     // Included in recommended: no-unexpected-multiline
     'no-unmodified-loop-condition': 'error',
     // Included in recommended: no-unreachable
