@@ -11,7 +11,7 @@ export const paperRulesForEslintBaseRules = {
     // Included in recommended: for-direction
     // Included in recommended: getter-return
     // Included in recommended: no-async-promise-executor
-    'no-await-in-loop': 'error',
+    // Ignored: no-await-in-loop
     // Included in recommended: no-class-assign
     // Included in recommended: no-compare-neg-zero
     // Included in recommended: no-cond-assign
