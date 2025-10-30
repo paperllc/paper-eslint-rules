@@ -154,7 +154,7 @@ const paperRulesForStylisticJsxRules = {
     '@stylistic/jsx-indent-props': ['error', 4],
     // Included in customize: @stylistic/jsx-max-props-per-line
     // Ignored: @stylistic/jsx-newline
-    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'non-jsx' }],
+    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-line' }],
     '@stylistic/jsx-pascal-case': 'error',
     // Included in customize: @stylistic/jsx-quotes
     '@stylistic/jsx-self-closing-comp': 'error',
