@@ -14,4 +14,5 @@ export const paperRulesForUnicorn: Readonly<Linter.RulesRecord> = {
     'unicorn/prefer-ternary': 'off', // Disable - sometimes if-else is more readable
     'unicorn/no-array-reverse': 'off', // We still use ES2022, can be enabled since ES2023
     'unicorn/prefer-response-static-json': 'off', // We still use ES2022, can be enabled since ES2023
+    'unicorn/no-array-sort': 'off', // We still use ES2022, can be enabled since ES2023
 }
